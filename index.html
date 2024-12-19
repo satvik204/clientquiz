@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Quiz Battle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Total Players: <span class="tp">1</span></h2>
+
+    <div class="start-Area">
+    <button class="start" onclick="start()">Start Game</button>
+</div>
+<div class="lobby" style="display: none;">
+    <h1>Waiting for Opponent.....</h1>
+</div>
+
+<div class="match_area" style="display: none;">
+    <div class="container">
+        <div class="top">
+        <div class="score">
+        <h3>Score: <span class="yscore">0</span></h3>
+        <h3>Opp Score: <span class="oscore">0</span></h3>
+        </div>
+        <div class="lives">
+          <h3 class="ylives">Lives: ❤❤❤</h3>
+          <h3 class="olives">Opp Lives: ❤❤❤</h3>
+        </div>
+    </div>
+        <div class="time"><span class="hr">1</span>: <span class="min">00</span> </div>
+        <div class="question">4 + 6 <span>:</span></div>
+
+        <div class="options">
+            <div class="a" onclick="checkAns('a')">4</div>
+            <div class="b" onclick="checkAns('b')">3</div>
+            <div class="c" onclick="checkAns('c')">10</div>
+            <div class="d" onclick="checkAns('d')">6</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+</body>
+</html>
